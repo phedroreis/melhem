@@ -114,7 +114,13 @@ time {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
+  text-align: justify;
   color: black;
+}
+
+.float {
+  float: left;
+  margin-right: 5px;
 }
 
 @media (max-width: 700px) {

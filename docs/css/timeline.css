@@ -24,16 +24,19 @@
   margin-left: -1px;
 }
 
+
 .event {
   padding: 15px 30px;
   position: relative;
   background-color: inherit;
   width: 80%;
   left: 0;
+  cursor: url("../img/select.cur"), auto;
 }
 
 .event:hover {
   background-color: var(--event-hover-color);
+
 }
 
 .event::after {

@@ -8,6 +8,10 @@
 
 }
 
+main {
+  padding: 0;
+}
+
 .timeline {
   margin: 0 auto;
   padding: 15px 0;

@@ -2,18 +2,6 @@
 
 @import "main.css";
 
-main {
-  padding: 16px;
-}
-
-main h1 {
-  text-align: center;
-}
-
-main p {
-  text-align: justify;
-}
-
 .back {
   position: fixed;
   left: 4px;

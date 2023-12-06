@@ -67,6 +67,20 @@ main {
   margin: 0;
   background-color: var(--color3);
   width: 100%;
+  padding: 16px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main p {
+  text-align: justify;
+}
+
+main .img-centralizada {
+  display: block;
+  margin: auto;
 }
 
 footer {

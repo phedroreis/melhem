@@ -11,7 +11,7 @@
 
   --base-color: #F6D155;
   --color2: #E0B058;
-  --color3: #f2f7cc;
+  --color3: #fcffe2fa;
   --color4: #F5A556;
   --contrastant-color: #006E51;
 
@@ -29,6 +29,11 @@ body {
 
 a {
   cursor: url("../img/select.cur"), auto;
+}
+
+p {
+  text-indent: 16px;
+  line-height: 22px;
 }
 
 header {

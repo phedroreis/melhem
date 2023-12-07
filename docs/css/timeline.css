@@ -119,10 +119,6 @@ time {
 
 .event .content p {
   margin: 0;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: justify;
-  color: black;
 }
 
 .float {
@@ -130,6 +126,9 @@ time {
   margin-right: 5px;
 }
 
+/*------------------------------------------------------------------------------------------
+                              Estilo para dispositivos moveis
+------------------------------------------------------------------------------------------*/
 @media (max-width: 700px) {
 
   .timeline::after {
@@ -140,8 +139,16 @@ time {
 
   .event {
 
-     width: 70%;
+    width: 70%;
 
+
+  }
+
+  .event p {
+
+    text-align: left;
+    text-indent: 0;
+    
   }
 
   .event .content {

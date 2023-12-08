@@ -5,16 +5,21 @@
 ------------------------------------------------------------------------------------------*/
 :root {
 
-  --header-footer-zindex: 50;
-  --max-zindex: 100;
+  --header-zindex: 500;
+  --article-zindex: 450;
+  --articletail-zindex: 350;
+  --footer-zindex: 400;
+  --max-zindex: 1000;
 
   /* Paleta de cores do site*/
 
   --base-color: #F6D155;
   --color2: #E0B058;
-  --color3: #fcffe2fa;
+  --color3: #FCFFE2;
   --color4: #F5A556;
   --contrastant-color: #006E51;
+
+  --gradiente-color: #e0e4c5;
 
 }
 
@@ -47,7 +52,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: var(--header-footer-zindex);
+  z-index: var(--header-zindex);
   text-align: center;
   color: var(--contrastant-color);
   border-bottom: solid 1px var(--base-color);
@@ -78,20 +83,30 @@ main {
   margin: 0;
   background-color: var(--color3);
   width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------
+                          Configura os artigos das paginas
+------------------------------------------------------------------------------------------*/
+article {
+  position: relative;
   padding: 16px;
+  border-bottom: solid 1px var(--base-color);
+  z-index: var(--article-zindex);
+  background-image: linear-gradient(var(--color3), var(--gradiente-color));
 }
 
 /*------------------------------------------------------------------------------------------
                       Titulos principais das paginas centralizados
 ------------------------------------------------------------------------------------------*/
-main h1 {
+article h1 {
   text-align: center;
 }
 
 /*------------------------------------------------------------------------------------------
                           Paragrafos justificados e com indentacao
 ------------------------------------------------------------------------------------------*/
-main p {
+article p {
   text-align: justify;
   text-indent: 16px;
   line-height: 22px;
@@ -100,7 +115,7 @@ main p {
 /*------------------------------------------------------------------------------------------
                         Imagens sem legenda centralizadas nas paginas
 ------------------------------------------------------------------------------------------*/
-main .img-centralizada {
+article .center {
   display: block;
   margin: auto;
 }
@@ -108,23 +123,25 @@ main .img-centralizada {
 /*------------------------------------------------------------------------------------------
              Figuras com legenda a esquerda e a direita do texto
 ------------------------------------------------------------------------------------------*/
-main .left { 
-
+article .left {
   float: left; 
   margin: 0 16px 0 0;
   padding: 2px;
-  border: solid 2px black;
-  
+  border: solid 2px black;  
 }
 
-main .right { 
-
+article .right { 
   float: right;
   margin: 0 0 0 16px;
   padding: 2px;
   border: solid 2px black;
-
 }
+
+.article-tail {
+  position: relative;
+  z-index: var(--articletail-zindex);
+}
+
 
 /*------------------------------------------------------------------------------------------
                                  Confugura os rodapes das paginas
@@ -134,20 +151,19 @@ footer {
   bottom: 0;
   margin: 0;
   width: 100%;
-  z-index: var(--header-footer-zindex);
+  z-index: var(--footer-zindex);
   background-color: var(--color3);
   color: var(--contrastant-color);
-  border-top: solid 1px var(--base-color);
   text-align: center;
+}
+
+footer p {
+  margin: 4px auto 4px auto;
 }
 
 /*------------------------------------------------------------------------------------------
                                  Implementa um tooltiptext
 ------------------------------------------------------------------------------------------*/
-footer p {
-  margin: 4px auto 4px auto;
-}
-
 .tooltip {
   position: relative;
   display: inline-block;
@@ -168,10 +184,9 @@ footer p {
   position: absolute;
   top: -15px;
   left: 20px;
-  z-index: 1000;
+  z-index: var(--max-zindex);
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-

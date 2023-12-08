@@ -19,10 +19,12 @@ janela. Videos do youtube no elemento main tambem serao redimensionados.
 function resizing() {
 
   var main = document.querySelector('main');
+  var tail = document.querySelector('.article-tail');
 
   main.style.top = document.querySelector('header').offsetHeight + 'px';
-  main.style.paddingBottom = document.querySelector('footer').offsetHeight + 'px';
-
+  /*main.style.paddingBottom = document.querySelector('footer').offsetHeight + 'px';*/
+  tail.style.height = document.querySelector('footer').offsetHeight + 'px';
+  
   var videos = document.querySelectorAll('iframe');
 
   var width = main.clientWidth;

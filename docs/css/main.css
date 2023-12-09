@@ -97,6 +97,12 @@ article {
 }
 
 /*------------------------------------------------------------------------------------------
+                      Subscritos de refs. com cor de destaque
+------------------------------------------------------------------------------------------*/
+article sub {
+  color: blue;
+}
+/*------------------------------------------------------------------------------------------
                       Titulos principais das paginas centralizados
 ------------------------------------------------------------------------------------------*/
 article h1 {
@@ -144,7 +150,7 @@ article .right {
 
 
 /*------------------------------------------------------------------------------------------
-                                 Confugura os rodapes das paginas
+                                 Configura os rodapes das paginas
 ------------------------------------------------------------------------------------------*/
 footer {
   position: fixed;
@@ -153,8 +159,54 @@ footer {
   width: 100%;
   z-index: var(--footer-zindex);
   background-color: var(--color3);
-  color: var(--contrastant-color);
+  color: black;
   text-align: center;
+}
+
+/*------------------------------------------------------------------------------------------
+                        Configura a figure que contem a lista de referencias
+------------------------------------------------------------------------------------------*/
+footer figure {
+  text-align: left;
+}
+
+
+/*------------------------------------------------------------------------------------------
+                              Configura a lista de referencias
+------------------------------------------------------------------------------------------*/
+footer ol {
+  border: solid var(--contrastant-color);
+  margin: 0 16px 16px 0;
+  padding: 6px;
+  line-height: 28px;
+  list-style-position: inside;
+}
+
+footer ol li {
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol li:before {
+  content: "[" counter(item) "]";
+  margin-right: 5px;
+  background-color: var(--color4);  
+  color: var(--contrastant-color);
+  font-weight: bold;
+  padding: 3px 6px;
+}
+
+footer ol li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer ol li:nth-child(even) {
+  background-color: #d7dabe;
+}
+
+footer ol li:nth-child(odd) {
+  background-color: var(--gradiente-color);
 }
 
 footer p {

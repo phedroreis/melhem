@@ -4,7 +4,6 @@
                               Variaveis globais
 ------------------------------------------------------------------------------------------*/
 :root {
-
   --header-zindex: 500;
   --article-zindex: 450;
   --articletail-zindex: 350;
@@ -19,8 +18,7 @@
   --color4: #F5A556;
   --contrastant-color: #006E51;
 
-  --gradiente-color: #e0e4c5;
-
+  --gradiente-color: #E0E4C5;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -129,25 +127,30 @@ article .center {
 /*------------------------------------------------------------------------------------------
              Figuras com legenda a esquerda e a direita do texto
 ------------------------------------------------------------------------------------------*/
-article .left {
-  float: left; 
+article figure {
   margin: 0 16px 0 0;
   padding: 2px;
-  border: solid 2px black;  
+  border: solid 2px black; 
+  background-color: white;  
+}
+
+article .left {
+  float: left; 
 }
 
 article .right { 
   float: right;
-  margin: 0 0 0 16px;
-  padding: 2px;
-  border: solid 2px black;
 }
 
+/*------------------------------------------------------------------------------------------
+  Esta div tem funcao no efeito persiana (sobre o footer) exibido pelas paginas do site.
+
+  Um codigo JS faz com que ela tenha sempre a mesma altura do footer
+------------------------------------------------------------------------------------------*/
 .article-tail {
   position: relative;
   z-index: var(--articletail-zindex);
 }
-
 
 /*------------------------------------------------------------------------------------------
                                  Configura os rodapes das paginas
@@ -169,7 +172,6 @@ footer {
 footer figure {
   text-align: left;
 }
-
 
 /*------------------------------------------------------------------------------------------
                               Configura a lista de referencias
@@ -201,44 +203,14 @@ footer ol li a {
   color: black;
 }
 
-footer ol li:nth-child(even) {
-  background-color: #d7dabe;
-}
-
 footer ol li:nth-child(odd) {
   background-color: var(--gradiente-color);
 }
 
+footer ol li:nth-child(even) {
+  background-color: #d7dabe;
+}
+
 footer p {
   margin: 4px auto 4px auto;
-}
-
-/*------------------------------------------------------------------------------------------
-                                 Implementa um tooltiptext
-------------------------------------------------------------------------------------------*/
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
- 
-  /* Position the tooltip */
-  position: absolute;
-  top: -15px;
-  left: 20px;
-  z-index: var(--max-zindex);
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }

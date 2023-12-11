@@ -12,11 +12,11 @@
 
   /* Paleta de cores do site*/
 
-  --base-color: #F6D155;
-  --color2: #E0B058;
-  --color3: #FCFFE2;
-  --color4: #F5A556;
-  --contrastant-color: #006E51;
+  --contrastant-color: #F6D155;
+  --color1: #E0B058;
+  --color2: #FCFFE2;
+  --color3: #F5A556;
+  --base-color: #006E51;
 
   --gradiente-color: #E0E4C5;
 }
@@ -31,7 +31,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--color3);
+  background-color: var(--color2);
 }
 
 /*------------------------------------------------------------------------------------------
@@ -46,14 +46,14 @@ a {
 ------------------------------------------------------------------------------------------*/
 header {
   margin: 0;
-  background-color: var(--color3);
+  background-color: var(--color2);
   width: 100%;
   position: fixed;
   top: 0;
   z-index: var(--header-zindex);
   text-align: center;
-  color: var(--contrastant-color);
-  border-bottom: solid 1px var(--base-color);
+  color: var(--base-color);
+  border-bottom: solid 1px var(--contrastant-color);
 }
 
 /*------------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ ul#menu-principal li {
 }
 
 ul#menu-principal li:hover {
-  background-color: var(--base-color);
+  background-color: var(--contrastant-color);
 }
 
 /*------------------------------------------------------------------------------------------
@@ -79,8 +79,17 @@ ul#menu-principal li:hover {
 main {
   position: absolute;
   margin: 0;
-  background-color: var(--color3);
+  background-color: var(--color2);
   width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------
+                          Paragrafos justificados e com indentacao
+------------------------------------------------------------------------------------------*/
+main p {
+  text-align: justify;
+  text-indent: 16px;
+  line-height: 22px;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -89,9 +98,9 @@ main {
 article {
   position: relative;
   padding: 16px;
-  border-bottom: solid 1px var(--base-color);
+  border-bottom: solid 1px var(--contrastant-color);
   z-index: var(--article-zindex);
-  background-image: linear-gradient(var(--color3), var(--gradiente-color));
+  background-image: linear-gradient(var(--color2), var(--gradiente-color));
 }
 
 /*------------------------------------------------------------------------------------------
@@ -108,15 +117,6 @@ article h1 {
 }
 
 /*------------------------------------------------------------------------------------------
-                          Paragrafos justificados e com indentacao
-------------------------------------------------------------------------------------------*/
-article p {
-  text-align: justify;
-  text-indent: 16px;
-  line-height: 22px;
-}
-
-/*------------------------------------------------------------------------------------------
                         Imagens sem legenda centralizadas nas paginas
 ------------------------------------------------------------------------------------------*/
 article .center {
@@ -128,17 +128,18 @@ article .center {
              Figuras com legenda a esquerda e a direita do texto
 ------------------------------------------------------------------------------------------*/
 article figure {
-  margin: 0 16px 0 0;
   padding: 2px;
   border: solid 2px black; 
   background-color: white;  
 }
 
 article .left {
+  margin: 0 16px 16px 0;
   float: left; 
 }
 
 article .right { 
+  margin: 0 0 16px 16px;
   float: right;
 }
 
@@ -161,7 +162,7 @@ footer {
   margin: 0;
   width: 100%;
   z-index: var(--footer-zindex);
-  background-color: var(--color3);
+  background-color: var(--color2);
   color: black;
   text-align: center;
 }
@@ -177,7 +178,7 @@ footer figure {
                               Configura a lista de referencias
 ------------------------------------------------------------------------------------------*/
 footer ol {
-  border: solid var(--contrastant-color);
+  border: solid var(--base-color);
   margin: 0 16px 16px 0;
   padding: 6px;
   line-height: 28px;
@@ -192,8 +193,8 @@ footer ol li {
 ol li:before {
   content: "[" counter(item) "]";
   margin-right: 5px;
-  background-color: var(--color4);  
-  color: var(--contrastant-color);
+  background-color: var(--color3);  
+  color: var(--base-color);
   font-weight: bold;
   padding: 3px 6px;
 }
@@ -213,4 +214,31 @@ footer ol li:nth-child(even) {
 
 footer p {
   margin: 4px auto 4px auto;
+}
+
+/*------------------------------------------------------------------------------------------
+                                 Para smartphones
+------------------------------------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+  article .center {
+    width: 100%;
+  }
+
+  article figure {
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+
+  article figure img {
+    width: 100%;
+  }
+
+  footer figure {
+    width: 100%;
+    margin: 16px 0 16px 0;
+  }
+
 }

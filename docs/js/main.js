@@ -28,7 +28,7 @@ function resizing() {
 
   var width = main.clientWidth;
 
-  if (width > 720) {//video ocupa 60% da largura e eh centralizado no elemento main
+  if (width > 480) {//video ocupa 60% da largura e eh centralizado no elemento main
 
     var height = width * 9 / 25;
     var marginLeft = (width - (width * 6 / 10)) / 2;

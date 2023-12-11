@@ -129,29 +129,30 @@ time {
 @media (max-width: 480px) {
 
   .timeline::after {
-
     left: 70%;
-
   }
 
   .event {
-
     width: 70%;
+  }
 
+  .event .icon {
+    display: none;
+  }
 
+  .event::before {
+    width: 25px;
   }
 
   .event p {
-
     text-align: left;
-    text-indent: 0;
-    
+    text-indent: 0;  
   }
 
   .event .content {
-
     border-radius: 15px 15px;
-
+    padding: 10px;
+    margin: 2px;
   }
 
 }

@@ -57,6 +57,9 @@ header {
   border-bottom: solid 1px var(--contrastant-color);
 }
 
+/*------------------------------------------------------------------------------------------
+                                O menu hamburguinho
+------------------------------------------------------------------------------------------*/
 #hamburger {
   display: none;
   position: fixed;
@@ -68,7 +71,7 @@ header {
 /*------------------------------------------------------------------------------------------
                              Configura menu principal
 ------------------------------------------------------------------------------------------*/
-ul#menu-principal {
+ul#main-menu {
   position: relative;
   list-style-type: none;
   margin: 0;
@@ -76,7 +79,7 @@ ul#menu-principal {
   z-index: var(--header-zindex);
 }
 
-ul#menu-principal li {
+ul#main-menu li {
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
@@ -86,7 +89,7 @@ ul#menu-principal li {
   cursor: url("../img/select.cur"), auto;
 }
 
-ul#menu-principal li:hover {
+ul#main-menu li:hover {
   background-color: var(--contrastant-color);
 }
 
@@ -244,15 +247,17 @@ footer p {
    border: none;
   }
 
-  ul#menu-principal {
+  ul#main-menu {
     width: 50%;
     background-color: var(--color2);
     border: solid 4px var(--color1);
+    box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.39);
   }
 
-  ul#menu-principal li {
+  ul#main-menu li {
     display: block;
     margin-right: 0;
+    border-bottom: dotted 1px var(--color1);
   }
 
   article .center {
@@ -271,7 +276,7 @@ footer p {
 
   footer figure {
     width: 100%;
-    margin: 16px 0 16px 0;
+    margin: 16px 4px 16px 8px;
   }
 
 }

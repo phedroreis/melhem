@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/main.css" rel="stylesheet">
-  <title>Mais</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <title>Verônica Debom</title>
 </head>
 
 <body>
@@ -14,13 +15,13 @@
     <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
 
     <nav>
-      <ul id="menu-principal">
+      <ul id="main-menu">
         <li onclick="loadPage('index.html')">Início</li>
         <li onclick="loadPage('entenda.html')">Entenda&nbsp;o&nbsp;caso</li>
-        <li onclick="loadPage('timeline.html')">Linha&nbsp;do&nbsp;Tempo</li>
+        <li onclick="loadPage('timeline.html#debom')">Linha&nbsp;do&nbsp;Tempo</li>
         <li onclick="loadPage('quem.html')">Quem&nbsp;é&nbsp;quem</li>
         <li onclick="loadPage('links.html')">Links</li>
-        <li onclick="loadPage('mais.html')" >Mais</li>
+        <li onclick="loadPage('opine.html')" >Opine</li>
       </ul>
     </nav>
 
@@ -28,16 +29,24 @@
 
   <main onclick="hideMenu()">
     <article>
-      <h1>Página em construção - Mais</h1>
+      <h1>De Bom Não Tem Nada</h1>
     </article>
     <div id="article-tail"></div>
   </main>
 
   <footer onclick="hideMenu()">
+
+    <figure>
+      <figcaption>Referências:</figcaption>
+      <ol title="Referências"> 
+        <li><a href="#" target="_blank">A fonte</a></li>
+      </ol>
+    </figure>
+
   </footer>
 
   <script src="js/main.js"></script>
-  <script>initialize(5)</script>
+  <script>initialize(2)</script>
  
   </body>
 

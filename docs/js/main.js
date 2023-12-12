@@ -27,7 +27,7 @@ function resizing() {
   var youtube = document.querySelectorAll('iframe');
 
   var hamburger = document.querySelector('#hamburger');
-  var menu = document.querySelector('#menu-principal');
+  var menu = document.querySelector('#main-menu');
 
   var viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
@@ -72,7 +72,7 @@ function hideMenu() {
 
   if (viewportWidth > 480) return; //Menu suspenso estah desabilitado
 
-  var menu = document.querySelector('ul#menu-principal');
+  var menu = document.querySelector('ul#main-menu');
   if (menu.style.display = 'block') menu.style.display = 'none'; 
 
 }//hideMenu
@@ -83,7 +83,7 @@ function hideMenu() {
 -----------------------------------------------------------------------------*/
 function showMenu() {
 
-  document.querySelector('ul#menu-principal').style.display = 'block';
+  document.querySelector('ul#main-menu').style.display = 'block';
 
 }//showMenu
 
@@ -95,7 +95,7 @@ function showMenu() {
 -----------------------------------------------------------------------------*/
 function initialize(optionNumber) {
 
-  var menuOptions = document.querySelectorAll('#menu-principal li');
+  var menuOptions = document.querySelectorAll('#main-menu li');
 
   menuOptions[optionNumber].style.color = '#E0B058';//Destaca o item de menu da pag. corrente
 

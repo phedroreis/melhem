@@ -10,38 +10,35 @@ main {
   padding: 0;
 }
 
+/*------------------------------------------------------------------------------------------
+                                 Div com todos os eventos
+------------------------------------------------------------------------------------------*/
 .timeline {
   margin: 0 auto;
   padding: 15px 0;
   background-image: linear-gradient(var(--color2), var(--gradiente-color));
+  border-right: solid 2px var(--base-color);
+  width: 75%;
 }
 
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: var(--base-color);
-  top: 0;
-  bottom: 0;
-  left: 80%;
-  margin-left: -1px;
-}
-
-
+/*------------------------------------------------------------------------------------------
+                          Estilo para os eventos da timeline
+------------------------------------------------------------------------------------------*/
 .event {
-  padding: 15px 30px;
   position: relative;
+  padding: 15px 30px;
   background-color: inherit;
-  width: 80%;
   left: 0;
   cursor: url("../img/select.cur"), auto;
 }
 
 .event:hover {
   background-color: var(--event-hover-color);
-
 }
 
+/*------------------------------------------------------------------------------------------
+                           Estilo das bolinhas dos eventos
+------------------------------------------------------------------------------------------*/
 .event::after {
   content: '';
   position: absolute;
@@ -49,18 +46,22 @@ main {
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
-  background-color: #ffffff;
+  background-color: white;
   border: 2px solid var(--base-color);
   border-radius: 16px;
   z-index: 1;
 }
 
+/*------------------------------------------------------------------------------------------
+                     A cor da bolinha do 1o e do ultimo evento
+------------------------------------------------------------------------------------------*/
 .start::after , .finish::after {
-
-  background-color: black;
-
+  background-color: var(--base-color);
 }
 
+/*------------------------------------------------------------------------------------------
+                            Tracinho que une o evento a sua bolinha
+------------------------------------------------------------------------------------------*/
 .event::before {
   content: '';
   position: absolute;
@@ -72,19 +73,39 @@ main {
   z-index: 1;
 }
 
-time {
+/*------------------------------------------------------------------------------------------
+                                       A data do evento
+------------------------------------------------------------------------------------------*/
+.date-item {
   position: absolute;
   display: inline-block;
-  top: calc(50% - 8px);
-  text-align: center;
   font-size: 14px;
   font-weight: bold;
   color: var(--base-color);
   letter-spacing: 1px;
   z-index: 1;
-  right: -79px;
+  right: -58px;
 }
 
+.year {
+  top: calc(50% - 7px);
+}
+
+.month {
+  top: calc(50% - 24px);
+}
+
+.day {
+  top: calc(50% - 38px);
+}
+
+.month::after , .day::after {
+  content: ' de';
+}
+
+/*------------------------------------------------------------------------------------------
+                          Icone do evento (um emoji)
+------------------------------------------------------------------------------------------*/
 .event .icon {
   position: absolute;
   display: inline-block;
@@ -102,6 +123,9 @@ time {
   right: 56px;
 }
 
+/*------------------------------------------------------------------------------------------
+                          Configura a div com o resumo do evento
+------------------------------------------------------------------------------------------*/
 .event .content {
   padding: 30px 90px 30px 30px;
   background-color: var(--contrastant-color);
@@ -109,14 +133,14 @@ time {
   border-radius: 0 500px 500px 0;
 }
 
-.event .content h2 {
+.event .content h2 { /*Titulo do evento*/
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
   color: var(--base-color);
 }
 
-.float {
+.float { /*Para uma imagem ilustrativa apresentada no resumo do evento*/
   display: block;
   float: left;
   height: 70px;
@@ -128,12 +152,9 @@ time {
 ------------------------------------------------------------------------------------------*/
 @media (max-width: 480px) {
 
-  .timeline::after {
-    left: 70%;
-  }
-
-  .event {
-    width: 70%;
+  .timeline {
+    width: 80%;
+    margin: 0 20px;
   }
 
   .event .icon {

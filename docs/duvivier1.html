@@ -11,6 +11,8 @@
 
   <header>
 
+    <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
+
     <nav>
       <ul id="menu-principal">
         <li onclick="loadPage('index.html')">Início</li>
@@ -24,7 +26,7 @@
 
   </header>
 
-  <main>
+  <main onclick="hideMenu()">
     <article>
 
       <h1>Caso com Bárbara Duvivier</h1>
@@ -44,7 +46,7 @@
 
       <p>É enteada de Maria Clara Gueiros, atriz que também integrava o núcleo de humor da Globo e hoje é uma das que estão processo na condição de testemunha.</p>
 
-      <p>(Uma curiosidade: Bárbara é irmã do também humorista Gregório Duvivier.</p>
+      <p>Uma curiosidade: Bárbara é irmã do também humorista Gregório Duvivier.</p>
       
       <p style="clear:left">Se você quer saber como e por quê ela fez isso, continue acompanhando a nossa linha do tempo do Caso Melhem. Aqui iremos destrinchar uma trama repleta de intrigas, jogos de interesses, paixões, falsidades, sexo e traição.</p>
 
@@ -63,7 +65,7 @@
 
   </main>
 
-  <footer>
+  <footer onclick="hideMenu()">
     <figure>
     <figcaption>Referências:</figcaption>
     <ol title="Referências"> 

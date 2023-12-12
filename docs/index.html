@@ -11,6 +11,8 @@
 
   <header>
 
+    <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
+
     <nav>
       <ul id="menu-principal">
         <li onclick="loadPage('index.html')">Início</li>
@@ -24,7 +26,7 @@
 
   </header>
 
-  <main>
+  <main onclick="hideMenu()">
 
     <article>
       <h1>O Caso Marcius Melhem x Dani Calabresa</h1>
@@ -73,23 +75,23 @@
       <p>Mais importante é também tentar saber por quê quatro delegadas da <abbr title="Delegacia de Atendimento a Mulher">Deam</abbr>, que estiveram a frente das investigações, não encontraram elementos de prova para indiciar Marcius Melhem, mas ainda assim não arquivaram o caso.</p>
       
       <p>E da mesma forma, cinco promotores, desde 2020, se debruçaram sobre este caso sem que denúncia houvesse sido oferecida ao <abbr title="Ministério Público do Rio de Janeiro">MP-RJ</abbr>.</p>
-
-      <figure class="left">
-        <picture>
-          <img  src="img/jourdan.jpg" alt="Isabela Jourdan">
-        </picture>
-        <figcaption>Isabela Jourdan</figcaption>
-      </figure>
         
       <p>Porém, por volta de maio de 2023, o Procurador-Geral de Justiça do MP-RJ, Luciano Mattos, participou de uma reunião virtual<sub title="Revista Veja, 13 de julho de 2023">[1]</sub> com representantes das supostas vítimas e uma nova promotora assistente foi indicada para trabalhar no caso. Na interpretação da defesa de Melhem, a peculiar nomeação foi uma clara e inconstitucional interferência de uma das partes interessadas no processo.</p>
 
       <p>Fato é que, depois de quase 3 anos a espera de uma decisão dos promotores que já conheciam profundamente o processo, a nova promotora, Isabela Jourdan, em apenas 40 dias oferece denúncia contra Marcius Melhem.</p>
 
+      <figure class="left">
+        <picture>
+          <img  src="img/isabela-jourdan.jpeg" alt="Isabela Jourdan">
+        </picture>
+        <figcaption>Isabela Jourdan</figcaption>
+      </figure>
+
       <p>Na referida denúncia chega a citar vítimas que não se declararam como vítimas e até uma acusação falsa contra Melhem que já havia sido desmentida em juízo por provas e pela própria Dani Calabresa.<sub title="Site ooops, 14 de agosto de 2023">[2]</sub>. Consequentemente, pra não cogitarmos a hipótese de má fé, somos obrigados a concluir que a referida promotora denunciou Narcius Melhem sem sequer o devido conhecimento do processo. O que não seria espantoso, considerando-se que isto demandaria ler, em menos de 40 dias, as mais de 2 mil páginas dos autos e dezenas de horas de gravações de áudio e vídeo.</p>
 
       <p>Então denunciou por quê? Denunciou pra quê?</p>
 
-      <p>Segundo o jornalista Ricardo Feltrin<sub title="Site ooops, 10 de julho de 2023">[3]</sub>, a resposta pode estar no fato de que a delegada titular do caso na Deam, Alriam Miranda Fernandes, vinha declarando que estava para entregar o relatório final e este seria técnico, se atendo apenas às provas, “sem se submeter a pressões”. Isto poderia ter apavorado o grupo das supostas vítimas e seus advogados, haja vista a quantidade extensa e robusta de provas constando nos autos que punham em xeque as acusações.</p>
+      <p>Segundo o jornalista Ricardo Feltrin<sub title="Site ooops, 10 de julho de 2023">[3]</sub>, a resposta pode estar no fato de que a delegada titular do caso na Deam, Alriam Miranda Fernandes, vinha declarando que estava para entregar o relatório final e este seria técnico, se atendo apenas às provas, “sem se submeter a pressões”. Isto poderia ter apavorado o grupo das supostas vítimas e seus advogados, haja visto a quantidade extensa e robusta de provas constando nos autos que punham em xeque as acusações.</p>
 
       <p>Coincidentemente, surge Jourdan após solicitação dos advogados do grupo de mulheres, que requisita e retira os autos da Deam e, em somente 40 dias, oferece providencial denúncia contra Melhem.</p>
 
@@ -114,7 +116,7 @@
   
   </main>
 
-  <footer>
+  <footer onclick="hideMenu()">
 
     <figure>
       <figcaption>Referências:</figcaption>
@@ -124,6 +126,7 @@
         <li><a href="https://ooops.com.br/tapetao-promotora-e-nomeada-na-surdina-no-caso-melhem/">Site ooops, <time datetime="2023-07-10">10 de julho de 2023</time></a></li>
        </ol>
     </figure>
+    
   </footer>
 
   <script src="js/main.js"></script>

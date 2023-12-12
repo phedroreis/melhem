@@ -5,6 +5,7 @@
 ------------------------------------------------------------------------------------------*/
 :root {
   --header-zindex: 500;
+  --hamburger-zindex: 475;
   --article-zindex: 450;
   --articletail-zindex: 350;
   --footer-zindex: 400;
@@ -56,9 +57,25 @@ header {
   border-bottom: solid 1px var(--contrastant-color);
 }
 
+#hamburger {
+  display: none;
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  z-index: var(--hamburger-zindex);
+}
+
 /*------------------------------------------------------------------------------------------
                              Configura menu principal
 ------------------------------------------------------------------------------------------*/
+ul#menu-principal {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: var(--header-zindex);
+}
+
 ul#menu-principal li {
   display: inline-block;
   font-size: 18px;
@@ -109,6 +126,7 @@ article {
 article sub {
   color: blue;
 }
+
 /*------------------------------------------------------------------------------------------
                       Titulos principais das paginas centralizados
 ------------------------------------------------------------------------------------------*/
@@ -219,8 +237,23 @@ footer p {
 /*------------------------------------------------------------------------------------------
                                  Para smartphones
 ------------------------------------------------------------------------------------------*/
-
 @media (max-width: 480px) {
+
+  header {
+   height: 0;
+   border: none;
+  }
+
+  ul#menu-principal {
+    width: 50%;
+    background-color: var(--color2);
+    border: solid 4px var(--color1);
+  }
+
+  ul#menu-principal li {
+    display: block;
+    margin-right: 0;
+  }
 
   article .center {
     width: 100%;

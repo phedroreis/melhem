@@ -11,6 +11,8 @@
 
   <header>
 
+    <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
+
     <nav>
       <ul id="menu-principal">
         <li onclick="loadPage('index.html')">Início</li>
@@ -24,7 +26,7 @@
 
   </header>
 
-  <main>
+  <main onclick="hideMenu()">
 
   <div class="timeline">  
 
@@ -112,10 +114,14 @@
 
   </div>
 
+  <div id="article-tail"></div>
+
 </main>
 
-  <script src="js/main.js"></script>
-  <script>initialize(2)</script>
+<footer></footer>
+
+<script src="js/main.js"></script>
+<script>initialize(2)</script>
 
 </body>
 </html>

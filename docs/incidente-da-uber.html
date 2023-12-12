@@ -11,6 +11,8 @@
 
   <header>
 
+    <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
+
     <nav>
       <ul id="menu-principal">
         <li onclick="loadPage('index.html')">Início</li>
@@ -24,7 +26,7 @@
 
   </header>
 
-  <main>
+  <main onclick="hideMenu()">
     
     <article>
       <h1>O Incidente com a Uber</h1>
@@ -41,7 +43,7 @@
 
       <figure class="left">
         <picture>
-          <img  src="img/Gueiros-e-marido.jpg" alt="Gueiros e Edgar Duvivier">
+          <img  src="img/gueiros-duvivier.jpeg" alt="Gueiros e Edgar Duvivier">
         </picture>
         <figcaption>Gueiros e Marido</figcaption>
       </figure>
@@ -71,7 +73,7 @@
 
   </main>
 
-  <footer>
+  <footer onclick="hideMenu()">
     <figure>
     <figcaption>Referências:</figcaption>
     <ol title="Referências"> 

@@ -11,6 +11,8 @@
 
   <header>
 
+    <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
+
     <nav>
       <ul id="menu-principal">
         <li onclick="loadPage('index.html')">Início</li>
@@ -24,12 +26,14 @@
 
   </header>
 
-  <main>
-    <h1>Página em construção - Links</h1>
+  <main onclick="hideMenu()">
+    <article>
+      <h1>Página em construção - Links</h1>
+    </article>
+    <div id="article-tail"></div>
   </main>
 
-  <footer>
-    <p>&copy; Copyright 2023</p>
+  <footer onclick="hideMenu()">
   </footer>
 
   <script src="js/main.js"></script>

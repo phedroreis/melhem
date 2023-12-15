@@ -237,10 +237,22 @@ footer p {
   margin: 4px auto 4px auto;
 }
 
+.mobile-screen {
+  display: none;
+}
+
 /*------------------------------------------------------------------------------------------
                                  Para smartphones
 ------------------------------------------------------------------------------------------*/
 @media (max-width: 480px) {
+
+  .computer-screen {
+    display: none;
+  }
+
+  .mobile-screen {
+    display: block;
+  }
 
   header {
    height: 0;

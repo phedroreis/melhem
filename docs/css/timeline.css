@@ -10,6 +10,10 @@ main {
   padding: 0;
 }
 
+main h1 {
+  text-align: center;
+}
+
 /*------------------------------------------------------------------------------------------
                                  Div com todos os eventos
 ------------------------------------------------------------------------------------------*/
@@ -152,13 +156,13 @@ main {
 ------------------------------------------------------------------------------------------*/
 @media (max-width: 480px) {
 
+  .event .icon {
+    display: none;
+  }
+
   .timeline {
     width: 80%;
     margin: 0 20px;
-  }
-
-  .event .icon {
-    display: none;
   }
 
   .event::before {
@@ -166,7 +170,6 @@ main {
   }
 
   .event p {
-    text-align: left;
     text-indent: 0;  
   }
 

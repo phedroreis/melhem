@@ -19,6 +19,10 @@
   --color3: #F5A556;
   --base-color: #006E51;
 
+  --ref-color: blue;
+
+  --shadow-color: rgba(0, 0, 0, 0.39);
+
   --gradiente-color: #E0E4C5;
 }
 
@@ -61,7 +65,6 @@ header {
                                 O menu hamburguinho
 ------------------------------------------------------------------------------------------*/
 #hamburger {
-  display: none;
   position: fixed;
   top: 5px;
   left: 10px;
@@ -127,7 +130,7 @@ article {
                       Subscritos de refs. com cor de destaque
 ------------------------------------------------------------------------------------------*/
 article sub {
-  color: blue;
+  color: var(--ref-color)
 }
 
 /*------------------------------------------------------------------------------------------
@@ -141,6 +144,7 @@ article h1 {
                         Imagens sem legenda centralizadas nas paginas
 ------------------------------------------------------------------------------------------*/
 article .center {
+  border: solid 3px var(--base-color);
   display: block;
   margin: auto;
 }
@@ -162,6 +166,14 @@ article .left {
 article .right { 
   margin: 0 0 16px 16px;
   float: right;
+}
+
+/*------------------------------------------------------------------------------------------
+                                    Estilo para videos
+------------------------------------------------------------------------------------------*/
+
+iframe {
+  border: solid 3px var(--color1);
 }
 
 /*------------------------------------------------------------------------------------------
@@ -263,7 +275,7 @@ footer p {
     width: 50%;
     background-color: var(--color2);
     border: solid 4px var(--color1);
-    box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.39);
+    box-shadow: 6px 3px 10px var(--shadow-color);
   }
 
   ul#main-menu li {

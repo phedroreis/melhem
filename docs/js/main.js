@@ -38,7 +38,7 @@ function resizing() {
 
     var height = viewportWidth * 9 / 25;
     var marginLeft = (viewportWidth - (viewportWidth * 6 / 10)) / 2;
-  
+   
     for (let i = 0; i < youtube.length; i++) {
       youtube[i].style.width = '60%';
       youtube[i].style.height = height  + 'px';
@@ -51,12 +51,12 @@ function resizing() {
     menu.style.display = 'none';
 
     var height = viewportWidth * 3 / 5;
-   
+
     for (let i = 0; i < youtube.length; i++) {
       youtube[i].style.width = '100%';
       youtube[i].style.height = height  + 'px';
       youtube[i].style.marginLeft = '0'; 
-    }   
+    } 
 
   }
 

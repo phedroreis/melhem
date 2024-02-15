@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,158 +11,147 @@
 
 <body>
 
-  <header>
+  <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
 
-    <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
+  <div onclick="hideMenu()">
 
-    <nav>
-      <ul id="main-menu">
-        <li onclick="loadPage('index.html')">Início</li>
-        <li onclick="loadPage('entenda.html')">Entenda&nbsp;o&nbsp;caso</li>
-        <li onclick="loadPage('timeline.html')">Linha&nbsp;do&nbsp;Tempo</li>
-        <li onclick="loadPage('quem.html')">Quem&nbsp;é&nbsp;quem</li>
-        <li onclick="loadPage('links.html')">Links</li>
-        <li onclick="loadPage('opine.html')" >Opine</li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul id="main-menu">
+          <li onclick="loadPage('index.html')">Início</li>
+          <li onclick="loadPage('entenda.html')">Entenda&nbsp;o&nbsp;caso</li>
+          <li onclick="loadPage('timeline.html')">Linha&nbsp;do&nbsp;Tempo</li>
+          <li onclick="loadPage('quem.html')">Quem&nbsp;é&nbsp;quem</li>
+          <li onclick="loadPage('links.html')">Links</li>
+          <li onclick="loadPage('opine.html')" >Opine</li>
+        </ul>
+      </nav>
+    </header>
 
-  </header>
+    <main>
 
-  <main onclick="hideMenu()">
-
-  <h1>Cronologia do Caso</h1>  
-
-  <div class="timeline">  
-
-    <div class="event start" id="2011" onclick="loadPage('2011.html')">
-      <span class="date-item year">2011</span>
-      <span class="icon">&#10071;</span>
-      <div class="content">
-        <h2>Relacionamento com Bárbara Duvivier</h2>
-
-        <img src="img/duvivier-small.jpeg" class="float" alt="Bárbara Duvivier"> 
+      <h1>Cronologia do Caso</h1>
+      <div class="timeline">
+        <div class="event start" id="2011" onclick="loadPage('2011.html')">
+          <span class="date-item year">2011</span>
+          <span class="icon">&#10071;</span>
+          <div class="content">
+            <h2>Relacionamento com Bárbara Duvivier</h2>
+            <img src="img/duvivier-small.jpeg" class="float" alt="Bárbara Duvivier">
       
-        <p class="computer-screen">
-          Melhem inicia um relacionamento extra-conjugal com Bárbara Duvivier, então solteira. Anos mais tarde, ela fará a primeira falsa acusação de assédio.
-        </p>
-        <p class="mobile-screen">
-          Melhem inicia um relacionamento extra-conjugal com Bárbara Duvivier.
-        </p>
+            <p class="computer-screen">
+              Melhem inicia um relacionamento extra-conjugal com Bárbara Duvivier, então solteira. Anos mais tarde, ela fará a primeira falsa acusação de assédio.
+            </p>
+            <p class="mobile-screen">
+              Melhem inicia um relacionamento extra-conjugal com Bárbara Duvivier.
+            </p>
+          </div>
+        </div>
+        <div class="event" id="2016" onclick="loadPage('2016.html')">
+          <span class="date-item year">2016</span>
+          <span class="icon">&#128477;</span>
+          <div class="content">
+            <h2>Mensagem interceptada</h2>
+            <p class="computer-screen">
+              Em 2016 Bárbara Duvivier já estava casada e, em um evento nos Estados Unidos, uma mensagem suspeita de Melhem é flagrada no celular de Bárbara. Ao ser interpelada, ela decide inventar que estava sendo assediada por seu chefe, Marcius Melhem.
+            </p>
+            <p class="mobile-screen">
+              Ao ter uma mensagem de Melhem interceptada por alguém de sua família, Bárbara inventa a desculpa de estar sendo assediada por ele.
+            </p>
+          </div>
+        </div>
+        <div class="event" id="2017" onclick="loadPage('2017.html')">
+          <span class="date-item year">2017</span>
+          <span class="icon">&#128163;</span>
+          <div class="content">
+            <h2>Bárbara novamente: a deduragem da Uber</h2>
+            <p class="computer-screen">
+              Se o caldo do casamento de Bárbara Duvivier já tinha quase entornado no ano anterior, quando uma mensagem de Melhem é flagrada no celular de Bárbara, as coisas agora se complicam ainda mais: notificações da Uber chegam ao email do marido registrando frequentes as visitas dela ao apartamento de Marcius Melhem.
+            </p>
+            <p class="mobile-screen">
+              Notificações da Uber que mostram que Bárbara vai com frequência ao apartamento de Melhem chegam ao email de seu marido.
+            </p>
+          </div>
+        </div>
+        <div class="event" id="2017-02" onclick="loadPage('2017-02.html')">
+          <span class="date-item year">2017</span>
+          <span class="icon">&#10071;</span>
+          <div class="content">
+            <h2>Relacionamento com Verônica Debom</h2>
+            <img src="img/debom-small.jpeg" class="float" alt="Verônica Debom">
+            <p>
+              Marcius, já separado da segunda esposa, inicia um relacinamento com Verônica Debom.
+            </p>
+          </div>
+        </div>
+        <div class="event" id="out-2019" onclick="loadPage('out-2019.html')">
+          <span class="date-item month">out.</span>
+          <span class="date-item year">2019</span>
+          <span class="icon">&#10067;</span>
+          <div class="content">
+            <h2>Calabresa acusa Melhem de assédio moral</h2>
+            <p>
+              É aprovado o projeto do "Fora de Hora", do qual Calabresa foi cortada em maio. Ela vai ao DAA da Globo e acusa Melhem de assédio moral.
+            </p>
+          </div>
+        </div>
+        <div class="event" id="nov-2019" onclick="loadPage('nov-2019.html')">
+          <span class="date-item month">nov.</span>
+          <span class="date-item year">2019</span>
+          <span class="icon">&#128477;</span>
+          <div class="content">
+            <h2>Calabresa acusa Melhem de assédio sexual</h2>
+            <p>
+              Calabresa descobre que foi cortada do especial de humor de fim de ano, "A Gente Riu Assim". Ela volta ao DAA e passa a acusá-lo de assédio sexual e passa a contar com o apoio de mais duas atrizes e uma autora da Globo.
+            </p>
+          </div>
+        </div>
+        <div class="event" id="jan-2020" onclick="loadPage('jan-2020.html')">
+          <span class="date-item month">jan.</span>
+          <span class="date-item year">2020</span>
+          <span class="icon">&#10071;</span>
+          <div class="content">
+            <h2>Caso chega ao Compliance</h2>
+            <p>
+              O DAA remete o caso ao departamento de compliance da Globo e recomenda o arquivamento por falta de provas dos assédios. No fim do mês, Calabresa vai ao compliance e volta a acusar Melhem de assédio sexual e moral.
+            </p>
+          </div>
+        </div>
+        <div class="event" id="fev-2020" onclick="loadPage('fev-2020.html')">
+          <span class="date-item month">fev.</span>
+          <span class="date-item year">2020</span>
+          <span class="icon">&#10071;</span>
+          <div class="content">
+            <h2>Compliance começa a investigação</h2>
+            <p>
+              O compliance inicia a investigação. No final de fevereiro, Melhem comparece a este departamento para se defender.
+            </p>
+          </div>
+        </div>
+        <div class="event finish" id="event5" onclick="loadPage('event5.html')">
+          <span class="date-item day">20</span>
+          <span class="date-item month">mar.</span>
+          <span class="date-item year">2020</span>
+          <span class="icon">&#9878;</span>
+          <div class="content">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
- 
-    <div class="event" id="2016" onclick="loadPage('2016.html')">
-      <span class="date-item year">2016</span>
-      <span class="icon">&#128477;</span>
-      <div class="content">
-        <h2>Mensagem interceptada</h2>
-        <p class="computer-screen">
-          Em 2016 Bárbara Duvivier já estava casada e, em um evento nos Estados Unidos, seu marido
-          vê uma mensagem suspeita de Melhem no Whatsapp da esposa. Ao interpelar Bárbara, esta decide inventar que estava sendo assediada por seu chefe, Marcius Melhem.
-        </p>
-        <p class="mobile-screen">
-          Ao ter uma mensagem de Melhem interceptada por alguém de sua família, Bárbara inventa a desculpa de estar sendo assediada por ele.
-        </p>
-      </div>
-    </div>
-
-    <div class="event" id="2017" onclick="loadPage('2017.html')">
-      <span class="date-item year">2017</span>
-      <span class="icon">&#128163;</span>
-      <div class="content">
-        <h2>Bárbara novamente: a deduragem da Uber</h2>
-        <p class="computer-screen">
-          Se o caldo do casamento de Bárbara Duvivier já tinha quase entornado no ano anterior, quando uma mensagem de Melhem é flagrada no celular de Bárbara, as coisas agora se complicam ainda mais: notificações da Uber chegam ao email do marido registrando frequentes as visitas dela ao apartamento de Marcius Melhem.
-        </p>
-        <p class="mobile-screen">
-          Notificações da Uber que mostram que Bárbara vai com frequência ao apartamento de Melhem chegam ao email de seu marido.
-        </p>
-      </div>
-    </div>
-
-    <div class="event" id="2017-02" onclick="loadPage('2017-02.html')">
-      <span class="date-item year">2017</span>
-      <span class="icon">&#10071;</span>
-      <div class="content">
-        <h2>Relacionamento com Verônica Debom</h2>
-        <img src="img/debom-small.jpeg" class="float" alt="Verônica Debom"> 
-        <p>
-          Marcius, já separado da segunda esposa, inicia um relacinamento com Verônica Debom.
-        </p>
-      </div>
-    </div>
-
-    <div class="event" id="out-2019" onclick="loadPage('out-2019.html')">
-      <span class="date-item month">out.</span>
-      <span class="date-item year">2019</span>
-      <span class="icon">&#10067;</span>
-      <div class="content">
-        <h2>Calabresa acusa Melhem de assédio moral</h2>
-        <p>
-          É aprovado o projeto do "Fora de Hora", do qual Calabresa foi cortada em maio. Ela vai ao DAA da Globo e acusa Melhem de assédio moral.
-        </p>
-      </div>
-    </div>
-
-    <div class="event" id="nov-2019" onclick="loadPage('nov-2019.html')">
-      <span class="date-item month">nov.</span>
-      <span class="date-item year">2019</span>
-      <span class="icon">&#128477;</span>
-      <div class="content">
-        <h2>Calabresa acusa Melhem de assédio sexual</h2>
-        <p>
-          Calabresa descobre que foi cortada do especial de humor de fim de ano, "A Gente Riu Assim". Ela volta ao DAA e passa a acusá-lo de assédio sexual e passa a contar com o apoio de mais duas atrizes e uma autora da Globo.
-        </p>
-      </div>
-    </div>
-
-    <div class="event" id="jan-2020" onclick="loadPage('jan-2020.html')">
-      <span class="date-item month">jan.</span>
-      <span class="date-item year">2020</span>
-      <span class="icon">&#10071;</span>
-      <div class="content">
-        <h2>Caso chega ao Compliance</h2>
-        <p>
-          O DAA remete o caso ao departamento de compliance da Globo e recomenda o arquivamento por falta de provas dos assédios. No fim do mês, Calabresa vai ao compliance e volta a acusar Melhem de assédio sexual e moral.
-        </p>
-      </div>
-    </div>    
-
-    <div class="event" id="fev-2020" onclick="loadPage('fev-2020.html')">
-      <span class="date-item month">fev.</span>
-      <span class="date-item year">2020</span>
-      <span class="icon">&#10071;</span>
-      <div class="content">
-        <h2>Compliance começa a investigação</h2>
-        <p>
-          O compliance inicia a investigação. No final de fevereiro, Melhem comparece a este departamento para se defender.
-        </p>
-      </div>
-    </div>    
-
-    <div class="event finish" id="event5" onclick="loadPage('event5.html')">
-      <span class="date-item day">20</span>
-      <span class="date-item month">mar.</span>
-      <span class="date-item year">2020</span>
-      <span class="icon">&#9878;</span>
-      <div class="content">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-        </p>
-      </div>
-    </div>
+      <div id="article-tail"></div>
+    
+    </main>
+    
+    <footer></footer>
 
   </div>
 
-  <div id="article-tail"></div>
-
-</main>
-
-<footer></footer>
-
-<script src="js/main.js"></script>
-<script>initialize(2)</script>
+  <script src="js/main.js"></script>
+  <script>initialize(2)</script>
 
 </body>
+
 </html>

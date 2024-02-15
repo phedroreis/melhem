@@ -82,7 +82,7 @@ function hideMenu() {
      hamburguinho
 -----------------------------------------------------------------------------*/
 function showMenu() {
-
+  
   document.querySelector('ul#main-menu').style.display = 'block';
 
 }//showMenu

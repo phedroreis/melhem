@@ -10,36 +10,39 @@
 
 <body>
 
-  <header>
+  <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
 
-    <img onclick="showMenu()" id="hamburger" src="img/hamburger.png" alt="Exibe menu">
+  <div onclick="hideMenu()">
 
-    <nav>
-      <ul id="main-menu">
-        <li onclick="loadPage('index.html')">Início</li>
-        <li onclick="loadPage('entenda.html')">Entenda&nbsp;o&nbsp;caso</li>
-        <li onclick="loadPage('timeline.html')">Linha&nbsp;do&nbsp;Tempo</li>
-        <li onclick="loadPage('quem.html')">Quem&nbsp;é&nbsp;quem</li>
-        <li onclick="loadPage('links.html')">Links</li>
-        <li onclick="loadPage('opine.html')" >Opine</li>
-      </ul>
-    </nav>
+    <header>
+    
+      <nav>
+        <ul id="main-menu">
+          <li onclick="loadPage('index.html')">Início</li>
+          <li onclick="loadPage('entenda.html')">Entenda&nbsp;o&nbsp;caso</li>
+          <li onclick="loadPage('timeline.html')">Linha&nbsp;do&nbsp;Tempo</li>
+          <li onclick="loadPage('quem.html')">Quem&nbsp;é&nbsp;quem</li>
+          <li onclick="loadPage('links.html')">Links</li>
+          <li onclick="loadPage('opine.html')" >Opine</li>
+        </ul>
+      </nav>
+    </header>
 
-  </header>
+    <main>
+      <article>
+        <h1>Página em construção - Quem é quem neste caso</h1>
+      </article>
+      <div id="article-tail"></div>
+    </main>
 
-  <main onclick="hideMenu()">
-    <article>
-      <h1>Página em construção - Quem é quem neste caso</h1>
-    </article>
-    <div id="article-tail"></div>
-  </main>
+    <footer>
+    </footer>
 
-  <footer onclick="hideMenu()">
-  </footer>
+  </div>
 
   <script src="js/main.js"></script>
   <script>initialize(3)</script>
  
-  </body>
+</body>
 
-  </html>
+</html>
